@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>Jtumblppr</servlet-name>
+		<servlet-class>jtumblppr.JtumblpprServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>GetImageServlet</servlet-name>
+		<servlet-class>jtumblppr.GetImageServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>CleanCacheServlet</servlet-name>
+		<servlet-class>jtumblppr.cron.CleanCacheServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Jtumblppr</servlet-name>
+		<url-pattern>/ppr</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>GetImageServlet</servlet-name>
+		<url-pattern>/img</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>CleanCacheServlet</servlet-name>
+		<url-pattern>/cleancache</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>home.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

@@ -1,0 +1,25 @@
+
+body {
+	color: #557155;	
+}
+
+input, .button {
+	border-color: #6e946e;
+}
+
+
+.button {
+	background-color: #9fd89f;	
+}
+
+.button:hover {
+	background-color: #c1f5c1;	
+}
+
+input {
+	background-color: #9fda9f;	
+}
+
+#canvas {
+	background-color: #9dd39d;	
+}
